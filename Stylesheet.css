@@ -1,3 +1,21 @@
+/* IMPORTING DEPENDENCIES */
+@-webkit-keyframes appearance {
+  from {
+    opacity: 0.0;
+  }
+  to {
+    opacity: 1.0;
+  }
+}
+@keyframes appearance {
+  from {
+    opacity: 0.0;
+  }
+  to {
+    opacity: 1.0;
+  }
+}
+
 /* BORDER-BOX DECLARATION */
 html,
 *,
@@ -46,19 +64,18 @@ html,
 .header .nav .list.list--modifier {
   background-color: #00b7ff;
   color: white;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+  border-bottom: 0.5px solid white;
 }
 
-.wrapper {
+.wrap {
   padding-top: 150px;
+  padding-bottom: 15px;
   width: 100%;
   color: white;
   background-color: #00b7ff;
 }
 
-.wrapper .intro {
+.wrap .intro {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
@@ -74,7 +91,7 @@ html,
           align-items: stretch;
 }
 
-.wrapper .intro.intro--modifier {
+.wrap .intro.intro--modifier {
   color: white;
   background-color: #00b7ff;
   font-size: 13px;
@@ -82,35 +99,39 @@ html,
   letter-spacing: 1.3px;
 }
 
-.wrapper .intro__brief {
+.wrap .intro__brief {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
 }
 
-.wrapper .intro__image {
+.wrap .intro__brief .brief-paragraph2 {
+  display: none;
+}
+
+.wrap .intro__image {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
 }
 
-.wrapper .intro__image .image {
+.wrap .intro__image .image {
   width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 10% 15% 10% 15%;
   height: 80%;
 }
 
-.wrapper .intro__social {
+.wrap .intro__social {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  margin-top: 20px;
 }
 
-.wrapper .experience.experience--modifier {
+.wrap .skills.skills--modifier {
   color: white;
   margin-top: 100px;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 1.3px;
   width: 90%;
   margin-left: 5%;
@@ -118,23 +139,23 @@ html,
   text-align: center;
 }
 
-.wrapper .experience__heading {
+.wrap .skills__heading {
   color: black;
   font-size: 25px;
   text-align: center;
   font-weight: 400;
 }
 
-.wrapper .experience__image {
+.wrap .skills__image {
   height: 100px;
   width: 100px;
   margin: auto;
 }
 
-.wrapper .skills.skills--modifier {
+.wrap .experience.experience--modifier {
   color: white;
   margin-top: 100px;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 1.3px;
   width: 90%;
   margin-left: 5%;
@@ -142,23 +163,23 @@ html,
   text-align: center;
 }
 
-.wrapper .skills__heading {
+.wrap .experience__heading {
   color: black;
   font-size: 25px;
   text-align: center;
   font-weight: 400;
 }
 
-.wrapper .skills__image {
+.wrap .experience__image {
   height: 100px;
   width: 100px;
   margin: auto;
 }
 
-.wrapper .academic.academic--modifier {
+.wrap .academic.academic--modifier {
   color: white;
   margin-top: 100px;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 1.3px;
   width: 90%;
   margin-left: 5%;
@@ -166,23 +187,23 @@ html,
   text-align: center;
 }
 
-.wrapper .academic__heading {
+.wrap .academic__heading {
   color: black;
   font-size: 25px;
   text-align: center;
   font-weight: 400;
 }
 
-.wrapper .academic__image {
+.wrap .academic__image {
   height: 100px;
   width: 100px;
   margin: auto;
 }
 
-.wrapper .about.about--modifier {
+.wrap .about.about--modifier {
   color: white;
   margin-top: 100px;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 1.3px;
   width: 90%;
   margin-left: 5%;
@@ -190,40 +211,219 @@ html,
   text-align: center;
 }
 
-.wrapper .about__heading {
+.wrap .about__heading {
   color: black;
   font-size: 25px;
   text-align: center;
   font-weight: 400;
 }
 
-.wrapper .about__image {
-  height: 60px;
-  width: 60px;
-  margin: auto;
-}
-
-.wrapper .hobbies.hobbies--modifier {
-  color: white;
-  margin-top: 100px;
-  font-size: 13px;
-  letter-spacing: 1.3px;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
-}
-
-.wrapper .hobbies__heading {
-  color: black;
-  font-size: 25px;
-  text-align: center;
-  font-weight: 400;
-}
-
-.wrapper .hobbies__image {
+.wrap .about__image {
   height: 100px;
   width: 100px;
   margin: auto;
 }
+
+.wrap .hobbies.hobbies--modifier {
+  color: white;
+  margin-top: 100px;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.wrap .hobbies__heading {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.wrap .hobbies__image {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+
+.footer.footer--modifier {
+  background-color: teal;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.footer__paragraph {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 15px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.footer__heading {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 15px;
+  opacity: 0.7;
+}
+
+.footer__list {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer__list .contact {
+  list-style-type: none;
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* DESKTOP MODIFICATIONS*/
+@media only screen and (min-width: 800px) {
+  .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .wrap .intro {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .wrap .intro.intro--modifier {
+    font-size: 16px;
+  }
+  .wrap .intro__brief {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .wrap .intro__brief .brief-paragraph1 {
+    margin-top: 20%;
+  }
+  .wrap .intro__brief .brief-paragraph2 {
+    display: block;
+    margin-top: 10%;
+  }
+  .wrap .intro__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .wrap .intro__image .image {
+    width: 70%;
+    margin: 10% 15% 10% 15%;
+    height: 80%;
+  }
+  .wrap .intro__social {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-top: 20px;
+  }
+  .wrap .skills {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 42.5%;
+            flex: 0 0 42.5%;
+    padding-top: 15px;
+  }
+  .wrap .skills.skills--modifier {
+    color: white;
+    margin-top: 100px;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    margin-left: 5%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .wrap .experience {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 42.5%;
+            flex: 0 0 42.5%;
+  }
+  .wrap .experience.experience--modifier {
+    color: white;
+    margin-top: 100px;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    margin-left: 5%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .wrap .academic {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 42.5%;
+            flex: 0 0 42.5%;
+  }
+  .wrap .academic.academic--modifier {
+    color: white;
+    margin-top: 100px;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    margin-left: 5%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .wrap .about {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 42.5%;
+            flex: 0 0 42.5%;
+  }
+  .wrap .about.about--modifier {
+    color: white;
+    margin-top: 100px;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    margin-left: 5%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .wrap .hobbies {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 42.5%;
+            flex: 0 0 42.5%;
+  }
+  .wrap .hobbies.hobbies--modifier {
+    color: white;
+    margin-top: 100px;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    margin-left: 28.75%;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+/* TABLET MODIFICATIONS */
 /*# sourceMappingURL=Stylesheet.css.map */
