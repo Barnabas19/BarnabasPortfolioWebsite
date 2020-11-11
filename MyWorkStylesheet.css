@@ -1,0 +1,111 @@
+/* BORDER BOX DECLARATION*/
+html,
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* USING BEM ARCHITECTURE */
+/* MOBILE FIRST */
+.header .nav {
+  width: 100%;
+}
+
+.header .nav .list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.header .nav .list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  margin-bottom: 15px;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.header .nav .list__item:hover {
+  color: black;
+}
+
+.header .nav .list.list--modifier {
+  background-color: #00b7ff;
+  color: white;
+  border-bottom: 0.5px solid white;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #00b7ff;
+  color: white;
+  padding-top: 200px;
+  padding-bottom: 15px;
+}
+
+.wrapper .heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 50px;
+}
+
+.wrapper .main-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.wrapper .main-content .section {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.wrapper .main-content .section.section--modifier {
+  letter-spacing: 1.3px;
+}
+
+.wrapper .main-content .section__about {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.wrapper .main-content .section__links {
+  margin-top: 25px;
+}
+
+.wrapper .main-content .section__links__paragraph {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=MyWorkStylesheet.css.map */
