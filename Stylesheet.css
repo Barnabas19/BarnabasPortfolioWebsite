@@ -16,6 +16,24 @@
   }
 }
 
+@-webkit-keyframes blink {
+  from {
+    border-color: black;
+  }
+  to {
+    border-color: #ddd3cf;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: black;
+  }
+  to {
+    border-color: #ddd3cf;
+  }
+}
+
 /* BORDER-BOX DECLARATION */
 html,
 *,
@@ -137,6 +155,12 @@ html,
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
+  border-top: 50px solid #2e2d2d;
+  border-bottom: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 6px;
+  padding: 4px;
 }
 
 .wrap .skills__heading {
@@ -161,6 +185,12 @@ html,
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
+  border-top: 50px solid #2e2d2d;
+  border-bottom: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 6px;
+  padding: 4px;
 }
 
 .wrap .experience__heading {
@@ -185,6 +215,12 @@ html,
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
+  border-top: 50px solid #2e2d2d;
+  border-bottom: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 6px;
+  padding: 4px;
 }
 
 .wrap .academic__heading {
@@ -209,6 +245,12 @@ html,
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
+  border-top: 50px solid #2e2d2d;
+  border-bottom: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 6px;
+  padding: 4px;
 }
 
 .wrap .about__heading {
@@ -233,6 +275,12 @@ html,
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
+  border-top: 50px solid #2e2d2d;
+  border-bottom: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 6px;
+  padding: 4px;
 }
 
 .wrap .hobbies__heading {
@@ -366,6 +414,12 @@ html,
     margin-left: 5%;
     margin-right: 0;
     text-align: center;
+    border-top: 50px solid #2e2d2d;
+    border-bottom: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 6px;
+    padding: 4px;
   }
   .wrap .experience {
     -webkit-box-flex: 0;
@@ -380,6 +434,12 @@ html,
     margin-left: 5%;
     margin-right: 0;
     text-align: center;
+    border-top: 50px solid #2e2d2d;
+    border-bottom: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 6px;
+    padding: 4px;
   }
   .wrap .academic {
     -webkit-box-flex: 0;
@@ -394,6 +454,12 @@ html,
     margin-left: 5%;
     margin-right: 0;
     text-align: center;
+    border-top: 50px solid #2e2d2d;
+    border-bottom: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 6px;
+    padding: 4px;
   }
   .wrap .about {
     -webkit-box-flex: 0;
@@ -408,6 +474,12 @@ html,
     margin-left: 5%;
     margin-right: 0;
     text-align: center;
+    border-top: 50px solid #2e2d2d;
+    border-bottom: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 6px;
+    padding: 4px;
   }
   .wrap .hobbies {
     -webkit-box-flex: 0;
@@ -422,6 +494,12 @@ html,
     margin-left: 28.75%;
     margin-right: 0;
     text-align: center;
+    border-top: 50px solid #2e2d2d;
+    border-bottom: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 6px;
+    padding: 4px;
   }
 }
 
