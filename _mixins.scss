@@ -7,6 +7,12 @@
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
+    border-top: 50px solid rgb(46, 45, 45);
+    border-bottom: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 6px;
+    padding: 4px;
 }
 
 @mixin themeDesktop($color, $left-margin) {
@@ -17,4 +23,10 @@
     margin-left: $left-margin;
     margin-right: 0;
     text-align: center;
+    border-top: 50px solid rgb(46, 45, 45);
+    border-bottom: 1px solid black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 6px;
+    padding: 4px;
 }
