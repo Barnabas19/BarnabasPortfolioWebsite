@@ -6,3 +6,11 @@
         opacity: 1.0;
     }
 }
+@keyframes blink{
+    from{
+        border-color: black;
+    }
+    to{
+        border-color: rgb(221, 211, 207);
+    }
+}
