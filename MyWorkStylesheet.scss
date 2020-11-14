@@ -1,3 +1,6 @@
+/* IMPORTING DEPENDENCIES */
+@import '_animations';
+
 /* BORDER BOX DECLARATION*/
 html,
 *,
@@ -61,7 +64,10 @@ html,
             margin-bottom: 20px;
             padding-right: 5px;
             padding-left: 5px;
-            border: 1px solid white;
+            border-top: 50px solid rgb(46, 45, 45);
+            border-bottom: 1px solid black;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
             border-radius: 6px;
             &.section--modifier{
                 letter-spacing: 1.3px;
@@ -80,4 +86,67 @@ html,
             }
         }
     }
+}
+.footer{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    &.footer--modifier{
+        background-color: teal;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+    &__paragraph{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 15px;
+        text-align: center;
+        opacity: 0.8;
+    }
+    &__heading{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 100;
+        margin-top: 15px;
+        opacity: 0.7;
+    }
+    &__list{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        .contact{
+            list-style-type: none;
+            text-align: center;
+            opacity: 0.7;
+        }
+    }
+}
+
+
+/* DESKTOP AND TABLET-SIZE */
+@media only screen and (min-width: 590px){
+    .wrapper{
+        .heading{
+        }
+        .main-content{
+            .section{
+                flex: 0 0 44%;
+                margin-left: 4%;
+                &.section--modifier{
+                }
+                &__about{
+                }
+                &__links{
+                    &__paragraph{
+                    }
+                }
+                &:last-child{
+                    margin-left: 28%;
+                }
+            }
+        }
+    }    
 }
